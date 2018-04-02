@@ -68,6 +68,10 @@ li {
     border: 2px solid #8d8d8e;
     border-radius: 5px;
     vertical-align: middle;
+    outline:0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 8px;
 }
 
 input[value="Submit"] {
@@ -81,6 +85,7 @@ input[value="Submit"] {
     border-radius: 5px;
     vertical-align: top;
     resize: none;
+    outline:0
 }
 
 .button {
