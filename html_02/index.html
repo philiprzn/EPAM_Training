@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="form__header">
+            <h2>Form Here</h2>
+            <p class="req">* required fields</p>
+        </div>
+        <div class="main__content">
+            <form action="#" name="form">
+                <div class="form__line">
+                    <label class="form__label" for="name">Name:</label>
+                    <input class="input" id="name" type="text" name="name" placeholder=" insert your name" >
+                </div>
+                <div class="form__line">
+                    <div class="form__group">
+                        <label class="form__label" for="email">Email:</label>
+                        <input class="input" id="email" type="email" name="email" data="Form field hint" placeholder=" insert your email" required>
+                    </div>
+                    <div class="hint">
+                        <div class="hint__text">Form field hint</div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <div class="form__group">
+                        <label class="form__label" for="website">Website:</label>
+                        <input class="input" id="website" type="text" name="website" placeholder=" insert your website" required>
+                    </div>
+                    <div class="hint">
+                        <div class="hint__text">Form field hint</div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+                <div class="form__line">
+                    <label class="form__label " for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="form__line ">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
