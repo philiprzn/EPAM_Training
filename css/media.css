@@ -1,0 +1,36 @@
+@media screen and (max-width: 1030px) {
+    .wrapper {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .bul__block {
+        float: none;
+        width: 100%;
+    }
+
+    .bul__content {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .bul__pic {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .bul__name {
+        display: inline;
+        margin: 5px 0 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navmob {
+        display: block;
+        z-index: 999;
+    }
+}
