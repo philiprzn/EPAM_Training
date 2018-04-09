@@ -1,13 +1,22 @@
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1030px){
     .wrapper {
         margin: 0 30px;
     }
 }
 
-@media screen and (max-width: 910px) {
+
+@media screen and (max-width: 910px){
+    .logo {
+        width: 150px;
+    }
+
+    .logo__pic {
+        margin-left: 350px;
+    }
+
     .bul__block {
         float: none;
-        width: 100%;
+        width: 100%	;
     }
 
     .bul__content {
@@ -25,7 +34,7 @@
         margin: 5px 0 10px;
     }
 
-    .nav {
+    .nav{
         display: none;
     }
 
