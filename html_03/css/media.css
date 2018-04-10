@@ -8,10 +8,11 @@
 @media screen and (max-width: 910px){
     .logo {
         width: 150px;
+        margin-left: 30%;
     }
 
     .logo__pic {
-        margin-left: 350px;
+
     }
 
     .bul__block {

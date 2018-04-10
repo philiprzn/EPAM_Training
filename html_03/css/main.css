@@ -165,13 +165,28 @@ img {
 }
 
 .nav__link:hover {
-    color: #9a9bad;
+    color: #33c1e3;
 }
-
+/* ********************* Search *****************************/
 .search {
     position: absolute;
     right: 50px;
     top: 20px;
+}
+
+.search input {
+    border-radius: 3px;
+    border: 2px solid #f6f6f6;
+    outline: none;
+}
+
+.search input[placeholder]{
+    padding-left: 10px;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.search:hover  input {
+    border: 2px solid #33c1e3;
 }
 
 .search:hover .lupa {
@@ -180,6 +195,7 @@ img {
 
 .fa-search:before {
     content: "\f002";
+    color: #999999;
 }
 
 
