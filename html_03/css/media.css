@@ -4,6 +4,16 @@
     }
 }
 
+@media screen and (max-width: 980px){
+    .logo {
+        width: 300px;
+        margin-left: 20%;
+    }
+
+    .nav__link {
+        padding: 5px 10px;
+    }
+}
 
 @media screen and (max-width: 910px){
     .logo {
@@ -13,6 +23,10 @@
 
     .logo__pic {
 
+    }
+
+    .contacts {
+        top: 0;
     }
 
     .bul__block {
@@ -44,3 +58,4 @@
         z-index: 999;
     }
 }
+
