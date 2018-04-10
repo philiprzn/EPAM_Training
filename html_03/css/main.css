@@ -84,11 +84,54 @@ img {
 
 .logo__pic{
     vertical-align: middle;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
+
+/*//////////////////////////////////////////// Contacts */
+
+.contacts {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+.cont__list {
+}
+
+.cont__item {
+    float: left;
+    padding: 0 15px;
+    border-right: 2px solid #999999;
+}
+.cont__item:last-child {
+    border-right: none;
+}
+
+.cont__link:hover {
+    color: #33c1e3;
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+
+
+/*//////////////////////////////////////////// Navigation */
+
+
 .head__nav {
-    margin-left: 110px;
+    margin-left: 70px;
+    position: relative;
 }
 
 .nav{
@@ -113,7 +156,7 @@ img {
 
 .nav__link{
     color: #000;
-    padding: 5px 30px;
+    padding: 5px 20px;
     /*border: 1px solid black;*/
     /*line-height: 165px;*/
     font-size: 14px;
@@ -124,7 +167,23 @@ img {
 .nav__link:hover {
     color: #9a9bad;
 }
-/*Мобильное меню*/
+
+.search {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.search:hover .lupa {
+    color: #33c1e3;
+}
+
+.fa-search:before {
+    content: "\f002";
+}
+
+
+/* ********************************Мобильное меню**************************************/
 
 .navmob {
     position: absolute;
@@ -185,14 +244,13 @@ img {
 }
 
 
-
 /*////////////////////////////////////////*/
 .main{
-    /*background-image: url(../imgs/Mountain-3.jpg);*/
+    /*background-image: url(../img/Mountain-3.jpg);*/
 }
 
 .image{
-    background-image: url(../imgs/Mountain-3.jpg);
+    background-image: url(../img/Mountain-3.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
 
