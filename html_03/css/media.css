@@ -57,5 +57,9 @@
         display: block;
         z-index: 999;
     }
+
+    .search {
+        display: none;
+    }
 }
 
