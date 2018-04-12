@@ -92,7 +92,7 @@ a:active {
     text-decoration: none;
 }
 
-.fa-bars:before {
-    content: " ";
 
-}
+/*.fa-map-marker-alt:before {*/
+    /*content: "\f3c5";*/
+/*}*/
