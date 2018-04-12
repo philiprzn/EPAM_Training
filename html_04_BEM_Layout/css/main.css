@@ -2,8 +2,16 @@
     border: 1px solid fuchsia;
 }
 
+.footer {
+    border: 1px solid rosybrown;
+}
+
 
 .sidebar {
     background: #F5F5F5;
     border-right: 2px solid darkgrey;
+}
+
+.stuff {
+    overflow: auto;
 }
