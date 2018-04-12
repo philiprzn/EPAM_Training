@@ -10,8 +10,76 @@
 .sidebar {
     background: #F5F5F5;
     border-right: 2px solid darkgrey;
+    padding-left: 20px;
+}
+
+.sidebar__content {
+    margin-top: 60px;
 }
 
 .stuff {
     overflow: auto;
+}
+
+.stuff-section {
+    padding: 0 50px;
+}
+
+stuff-section-body {
+    margin-bottom: 40px;
+}
+
+.stuff-section__date {
+    margin-top: 70px;
+}
+
+.stuff-section-article {
+    border-bottom: 20px solid darkkhaki;
+    padding-bottom: 30px;
+}
+.description-left{
+    margin-right: 50px;
+}
+
+.description-left__item{
+    border-top: 2px solid #999999;
+}
+
+.description-left__item:last-child {
+    border-bottom: 2px solid #999999;
+}
+
+.description-left__text {
+    text-align: center;
+}
+
+.description-right__pic{
+    background: #F5F5F5 ;
+    margin-bottom: 100px;
+}
+
+.description-right {
+    margin-top: 30px;
+}
+
+.description-right__pic-name {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.description-right__text {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer__right{
+    -ms-text-align-last: right;
+    text-align: right;
+}
+
+.socials__list{
+    text-align: left;
 }

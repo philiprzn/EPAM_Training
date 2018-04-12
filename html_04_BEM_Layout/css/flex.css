@@ -1,12 +1,11 @@
 
 .wrapper {
-    display: flex;
     flex-direction: row;
 }
 
 .main-section {
     display: flex;
-    height: 88vh;
+    height: 92vh;
 }
 
 .sidebar {
@@ -17,5 +16,41 @@
 
 
 .stuff{
-    min-width: 75vw;
+    /*min-width: 75vw;*/
+    flex-grow: 2;
+}
+
+.stuff-section-article {
+    height: 70vh;
+}
+
+.stuff-section-body {
+    display: flex;
+}
+
+.description-left {
+    width: 15vw;
+}
+
+.description-right{
+    display: flex;
+}
+
+
+footer {
+    display: flex;
+    height: 5vh;
+}
+
+.footer__left, .footer__right{
+    min-width: 50vw
+}
+
+.footer__right{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.socials__list{
+    display: flex;
 }
