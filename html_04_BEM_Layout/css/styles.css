@@ -91,3 +91,8 @@ a:active {
     font-size: 18px;
     text-decoration: none;
 }
+
+.fa-bars:before {
+    content: " ";
+
+}
