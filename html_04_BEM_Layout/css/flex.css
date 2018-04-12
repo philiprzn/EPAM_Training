@@ -1,0 +1,18 @@
+
+.wrapper {
+    display: flex;
+}
+
+.main-section {
+    display: flex;
+    height: 90vh;
+}
+
+.sidebar {
+    min-width: 25vw;
+}
+
+
+.stuff{
+    min-width: 75vw;
+}

@@ -1,3 +1,9 @@
 .wrapper {
     border: 1px solid fuchsia;
 }
+
+
+.sidebar {
+    background: #F5F5F5;
+    border-right: 2px solid darkgrey;
+}
