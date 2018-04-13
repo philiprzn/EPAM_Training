@@ -5,7 +5,7 @@
 
 .main-section {
     display: flex;
-    height: 92vh;
+    height: 95vh;
 }
 
 .sidebar {
@@ -39,7 +39,7 @@
 
 footer {
     display: flex;
-    height: 5vh;
+    /*height: 5vh;*/
 }
 
 .footer__left, .footer__right{

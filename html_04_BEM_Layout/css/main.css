@@ -1,16 +1,17 @@
 .wrapper {
-    border: 1px solid fuchsia;
+    /*border: 1px solid fuchsia;*/
 }
 
 .footer {
-    border: 1px solid rosybrown;
+    /*border: 1px solid rosybrown;*/
 }
 
 
 .sidebar {
     background: #F5F5F5;
     border-right: 2px solid darkgrey;
-    padding-left: 20px;
+    border-bottom: 2px solid darkgrey;
+    padding-left: 40px;
 }
 
 .sidebar-header {
@@ -21,16 +22,22 @@
     margin-top: 60px;
 }
 
+.sidebar__title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .sidebar-nav__item {
     padding: 10px 0;
 }
 
 .sidebar-nav__link{
-    color: brown;
+    color: #adabab;
 }
 
 .stuff {
     overflow: auto;
+    border-bottom: 2px solid darkgrey;
 }
 
 .stuff-section {
@@ -43,10 +50,11 @@ stuff-section-body {
 
 .stuff-section__date {
     margin-top: 70px;
+    color: #adabab;
 }
 
 .stuff-section-article {
-    border-bottom: 20px solid darkkhaki;
+    border-bottom: 20px solid #999999;
     padding-bottom: 30px;
 }
 .description-left{
@@ -62,7 +70,10 @@ stuff-section-body {
 }
 
 .description-left__text {
-    text-align: center;
+    text-align: left;
+    color: #999999;
+    text-transform: uppercase;
+    padding-left: 10px ;
 }
 
 .description-right__pic{
