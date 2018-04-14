@@ -44,6 +44,10 @@
     padding: 0 50px;
 }
 
+.stuff-section__title {
+    text-transform: uppercase;
+}
+
 stuff-section-body {
     margin-bottom: 40px;
 }
@@ -98,11 +102,20 @@ stuff-section-body {
     text-transform: uppercase;
 }
 
+.copyright{
+    padding-top: 5px;
+}
+
 .footer__right{
-    -ms-text-align-last: right;
     text-align: right;
 }
 
 .socials__list{
     text-align: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.socials__item{
+    padding-right: 15px;
 }
