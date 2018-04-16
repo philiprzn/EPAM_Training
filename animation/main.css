@@ -25,10 +25,7 @@ body {
 
     60% {transform: skewX(30deg);}
     65% {transform: skewX(-30deg);}
-    70% {
-        transform: skewX(0deg);
-        transform: rotate(0deg);
-    }
+    72% {transform: rotate(10deg);}
 
     75% {transform: rotate(180deg);}
     80% {transform: rotate(0deg);}
