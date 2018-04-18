@@ -1,0 +1,52 @@
+html, body{
+    font-family: "ProximaNova Regular", "Fira Sans", Arial;
+    font-size: 16px;
+}
+
+ul,li {
+    list-style: none;
+}
+
+
+.header{
+    height: 45px;
+    min-height: 45px;
+    background: #333a4e;
+    align-items: center;
+}
+
+.user{
+    background: #23a7f7;
+    min-width: 158px;
+    height: 45px;
+}
+
+.user__ava {
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 5px 12px;
+}
+
+.user__ava-pic {
+    max-width: 33px;
+    max-height: 33px;
+    display: block;
+}
+
+.user__name {
+    line-height: 45px;
+    position: relative;
+    color: white;
+}
+
+.user__name > i {
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 73px;
+}

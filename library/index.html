@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="user">
+                    <!--<div class="user-wrap">-->
+                        <div class="user__ava">
+                            <img src="img/lilava.png" alt="#" class="user__ava-pic">
+                        </div>
+                        <div class="user__name">
+                            <span>Curt Curt</span>
+                            <i class="fas fa-chevron-circle-down fa-lg"></i>
+                        </div>
+
+                    <!--</div>-->
+                </div>
+                <div class="support">
+                    <ul class="support__list">
+                        <li class="support__item">Help Center</li>
+                        <i class="fas fa-circle"></i>
+                        <li class="support__item">Our Support</li>
+                    </ul>
+                </div>
+            </header>
+            <div class="aside-wrap">
+                <aside class="aside">
+                    <div class="add-book">
+                        <button class="add-book__button"><i class="fas fa-plus"></i><span class="add-book__button_text">Add a book</span></button>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">Now Reading</li>
+                            <li class="nav__item">Browse</li>
+                            <li class="nav__item">Buy Books</li>
+                            <li class="nav__item">Favorite Books</li>
+                            <li class="nav__item">Wishlist</li>
+                            <li class="nav__item">History</li>
+                        </ul>
+                    </nav>
+                    <div class="categories">
+                        <ul class="categories__list">
+                            <li class="categories__item">Must Read Titles</li>
+                            <li class="categories__item">Best Of List</li>
+                            <li class="categories__item">Classic Novels</li>
+                            <li class="categories__item">Non Fiction</li>
+                        </ul>
+                    </div>
+                    <div class="history">
+                        <article class="history__container">
+                            <div class="history__content">
+                                <i class="fas fa-clock"></i>
+                                <p class="history__text">history__text</p>
+                                <span class="history__time">24 minutes ago</span>
+                            </div>
+                            <div class="history__content">
+                                <i class="fas fa-clock"></i>
+                                <p class="history__text">history__text</p>
+                                <span class="history__time">24 minutes ago</span>
+                            </div>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+            <main class="main-wrap">
+                <header class="main-header">
+                    <h1 class="main-header__title">Browse Available Books</h1>
+                </header>
+                <section class="service-section">
+                    <div class="filters">
+                        <ul class="filters__list">
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">All Books</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">Most Recent</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">Most Popular</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">Free Books</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Enter Keywords">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </section>
+                <section class="books-section">
+                    <article class="book">
+                        <ul class="book__list">
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Title</div>
+                                    <div class="book__desc_author"><a href="#">Author</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="query">
+                    <a href="#"><i class="far fa-question-circle"></i></a>
+                </div>
+                <div class="settings">
+                    <a href="#"><i class="fas fa-cog"></i></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 990px;
+    width: 100vw - 1px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    /*justify-content: flex-end;*/
+    flex-direction: row-reverse;
+}
+
+.user {
+    display: flex;
+}
+.support__list{
+    display: flex;
+    flex-direction: row;
+}
