@@ -19,3 +19,12 @@
     display: flex;
     flex-direction: row;
 }
+
+.aside-wrap {
+    display: flex;
+    width: 200px;
+}
+
+.wrap {
+    display: flex;
+}
