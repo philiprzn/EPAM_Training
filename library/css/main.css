@@ -44,9 +44,24 @@ ul,li {
     color: white;
 }
 
-.user__name > i {
+.user__name  i {
     color: white;
     position: absolute;
-    top: 15px;
-    left: 73px;
+    top: 14px;
+    left: 75px;
+}
+.aside {
+    background: #1e2536;
+}
+.book-adder{
+    height: 114px;
+    background-color: #1e2535;
+    width: 100%;
+    border-bottom: 1px solid #131724;
+}
+
+.book-adder__button {
+    height: 44px;
+    width: 160px;
+    margin: 35px 20px;
 }
