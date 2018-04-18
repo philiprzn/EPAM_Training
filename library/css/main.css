@@ -64,4 +64,14 @@ ul,li {
     height: 44px;
     width: 160px;
     margin: 35px 20px;
+    border-radius: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: #b56758;
+    border: none;
+}
+
+.book-adder__button_text{
+    margin-left: 15px;
+    font-weight: bold;
 }
