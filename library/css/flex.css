@@ -39,6 +39,14 @@
     flex-direction: column;
 }
 
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.history__item {
+    
+}
 
 .main-wrap {
     display: flex;

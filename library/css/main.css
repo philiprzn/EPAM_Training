@@ -3,8 +3,12 @@ html, body{
     font-size: 16px;
 }
 
-ul,li {
+ul,li, a {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -51,8 +55,8 @@ ul,li {
     left: 75px;
 }
 .aside {
-    /*background: #1e2536;*/
-    background: #dcdae8;
+    background: #1e2536;
+    /*background: #dcdae8;*/
 }
 .book-adder{
     height: 114px;
@@ -68,7 +72,7 @@ ul,li {
     border-radius: 3px;
     color: white;
     text-transform: uppercase;
-    background: #f38366;
+    background: #f2795a;
     border: none;
 }
 
@@ -77,6 +81,7 @@ ul,li {
     font-weight: bold;
 }
 
+/*region  Navigation*/
 .nav {
     width: 100%;
     background-color: #1e2535;
@@ -92,21 +97,31 @@ ul,li {
 }
 
 .nav__item {
-    padding: 12px 0 12px 20px;
+    padding: 10px 0 10px 20px;
+}
+
+.nav__link {
     font-size: 13px;
     font-weight: bold;
     color: #737d98;
+    text-decoration: none;
+    width: 100%;
 }
 
-.nav__item i {
+.nav__link i {
     padding-right: 13px;
 }
 
 .nav__item:hover {
     background: #23a7f7;
-    color: white;
 }
 
+.nav__item:hover .nav__link{
+    color: white;
+}
+/*endregion*/
+
+/*region Categories*/
 .categories {
     width: 100%;
     background-color: #1e2535;
@@ -122,19 +137,81 @@ ul,li {
 }
 
 .categories__item {
-    padding: 13px 0 13px 46px;
+    padding: 13px 0 13px 33px;
+    position: relative;
+}
+
+.categories__link {
+    padding: 13px;
     font-size: 13px;
     font-weight: bold;
     color: #737d98;
-    position: relative;
 }
-.categories__item > i {
+
+.categories__link > i {
     position: absolute;
-    top: 17px;
+    top: 20px;
     left: 23px;
     font-size: 6px;
 }
+
+.categories__item:hover {
+    background: #23a7f7;
+}
+
+.categories__item:hover .categories__link{
+    color: white;
+}
+
 .categories__item:nth-child(1) i{color: #e64c66}
 .categories__item:nth-child(2) i{color: #ffab00}
 .categories__item:nth-child(3) i{color: #00bfdd}
-.categories__item:nth-child(4) i{color: #00bfdd}
+.categories__item:nth-child(4) i{color: #7874cf}
+/*endregion*/
+
+.history {
+    width: 200px;
+    background-color: #1e2535;
+    padding-top: 38px;
+    padding-bottom: 10px;
+    border-top: 1px solid #414b60;
+    border-bottom: 1px solid #131724;
+    margin-top: 4px;
+    height: 348px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.history__item {
+    margin: 0 26px 20px 46px;
+    position: relative;
+}
+
+.history__item i {
+    position: absolute;
+    top: 5px;
+    left: -30px;
+    color: #737d98;
+}
+
+.history__text {
+    margin: 0;
+    font-size: 12px;
+    color: #737d98;
+    text-align: justify;
+}
+.history__time {
+    margin: 0;
+    font-size: 12px;
+    color: #737d98;
+}
+
+.history__item_film-link,
+.history__item_author-link,
+.history__item_mr-link {
+    font-size: 13px;
+    font-weight: bold;
+    color: #677b92;
+}
+
