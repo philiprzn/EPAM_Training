@@ -95,7 +95,7 @@ ul,li {
     padding: 12px 0 12px 20px;
     font-size: 13px;
     font-weight: bold;
-    color: #4e5970;
+    color: #737d98;
 }
 
 .nav__item i {
@@ -106,3 +106,35 @@ ul,li {
     background: #23a7f7;
     color: white;
 }
+
+.categories {
+    width: 100%;
+    background-color: #1e2535;
+    border-top: 1px solid #414b60;
+    border-bottom: 1px solid #131724;
+    margin-top: 4px;
+    padding: 9px 0;
+}
+
+.categories__list {
+    margin: 0;
+    padding: 0;
+}
+
+.categories__item {
+    padding: 13px 0 13px 46px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #737d98;
+    position: relative;
+}
+.categories__item > i {
+    position: absolute;
+    top: 17px;
+    left: 23px;
+    font-size: 6px;
+}
+.categories__item:nth-child(1) i{color: #e64c66}
+.categories__item:nth-child(2) i{color: #ffab00}
+.categories__item:nth-child(3) i{color: #00bfdd}
+.categories__item:nth-child(4) i{color: #00bfdd}
