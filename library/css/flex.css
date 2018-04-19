@@ -45,11 +45,21 @@
 }
 
 .history__item {
-    
+
 }
 
 .main-wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.service-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filters__list{
+    display: flex;
 }
