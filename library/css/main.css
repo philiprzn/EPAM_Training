@@ -54,6 +54,33 @@ a {
     top: 14px;
     left: 75px;
 }
+
+.support__list i {
+    color: #1f2635;
+    font-size: 8px;
+    line-height: 45px;
+    margin: 0 5px;
+}
+.support__item{
+    padding: 0 10px;
+    height: 44px;
+}
+
+.support__item:hover {
+    background: #4a4e5b;
+    border-radius: 2px;
+    transition: ease-in-out 0.3s;
+}
+.support__item:hover .support__link{
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.support__link {
+    color: #6c758f;
+    line-height: 45px;
+}
+
 .aside {
     background: #1e2536;
     /*background: #dcdae8;*/
@@ -114,6 +141,7 @@ a {
 
 .nav__item:hover {
     background: #23a7f7;
+    transition: ease-in-out 0.2s;
 }
 
 .nav__item:hover .nav__link{
@@ -157,6 +185,7 @@ a {
 
 .categories__item:hover {
     background: #23a7f7;
+    transition: ease-in-out 0.2s;
 }
 
 .categories__item:hover .categories__link{
@@ -355,4 +384,24 @@ a {
     background: #333a4e;
     align-items: center;
 }
+
+.settings, .query{
+    width: 55px;
+    height: 100%;
+    background-color: #1f2637;
+    text-align: center;
+    line-height: 45px;
+    border-left: 1px solid #131724;
+}
+
+.settings i, .query i {
+    color: white;
+}
+
+.settings:hover, .query:hover {
+    background: #15a4fa;
+    transition: ease-in-out 0.2s;
+}
+
+
 

@@ -1,14 +1,13 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 990px;
-    width: 100vw - 1px;
+    /*height: 990px;*/
+    width: 100%
 }
 
 .header {
     display: flex;
-    width: 100%;
-    /*justify-content: flex-end;*/
+    /*width: 100%;*/
     flex-direction: row-reverse;
 }
 
@@ -79,4 +78,5 @@
 
 .footer {
     display: flex;
+    flex-direction: row-reverse;
 }
