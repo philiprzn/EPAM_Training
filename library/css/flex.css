@@ -20,6 +20,10 @@
     flex-direction: row;
 }
 
+.container {
+    display: flex;
+}
+
 
 .aside-wrap {
     display: flex;
@@ -30,9 +34,11 @@
     width: 100%;
 }
 
-.wrap {
+.nav__list {
     display: flex;
+    flex-direction: column;
 }
+
 
 .main-wrap {
     display: flex;

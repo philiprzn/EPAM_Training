@@ -51,7 +51,8 @@ ul,li {
     left: 75px;
 }
 .aside {
-    background: #1e2536;
+    /*background: #1e2536;*/
+    background: #dcdae8;
 }
 .book-adder{
     height: 114px;
@@ -67,11 +68,41 @@ ul,li {
     border-radius: 3px;
     color: white;
     text-transform: uppercase;
-    background: #b56758;
+    background: #f38366;
     border: none;
 }
 
 .book-adder__button_text{
     margin-left: 15px;
     font-weight: bold;
+}
+
+.nav {
+    width: 100%;
+    background-color: #1e2535;
+    padding-bottom: 10px;
+    border-top: 1px solid #414b60;
+    border-bottom: 1px solid #131724;
+    margin-top: 4px;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    padding: 12px 0 12px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4e5970;
+}
+
+.nav__item i {
+    padding-right: 13px;
+}
+
+.nav__item:hover {
+    background: #23a7f7;
+    color: white;
 }
