@@ -1,5 +1,3 @@
-var body = document.body;
-
 function deleteTextNodes(elem) {
     for (var i = 0; i < elem.childNodes.length; i++) {
              var childElem = elem.childNodes[i];
