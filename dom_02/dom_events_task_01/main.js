@@ -1,36 +1,64 @@
 // document.addEventListener("DOMContentLoaded", ready);
 
-// var accoItem = document.querySelectorAll('.acco__item');
+// Вот так бы это выглядело на JQuery
+// $(document).ready(function () {
+//     $('.acco__trigger').on('click', function (e) {
+//         e.preventDefault();
 //
+//         var item = $(this).closest('.acco__item');
+//         var textBlock = item.find('.acco__content-text');
+//         var reqHeight = textBlock.outerHeight();
+//         var containerTextBlock = item.find('.acco__content');
+//         var otherItems = item.siblings();
+//         var otherItemsText = otherItems.find('.acco__content')
 //
-//         for (var i = 0; i < accoItem.length; i++) {
-//             accoItem[i].addEventListener('click', function (e) {
-//                 // console.log(e);
-//                 // console.log( this.children[1].innerText);
-//                 // console.log( '123');
-//          }, false);
+//         if (item.hasClass('active')) {
+//             containerTextBlock.css('height', 0);
+//             item.removeClass('active');
+//         } else {
+//             item.addClass('active');
+//             containerTextBlock.css('height', reqHeight);
+//             otherItems.removeClass('active');
+//             otherItemsText.css('height', 0 )
 //         }
-            
+//         // console.log(reqHeight);
+//     })
+// })
+
+var acco = document.querySelector('.acco');
+
+acco.addEventListener('click', toggle);
+
+function toggle(node) {
+    var item = node.target.parentNode;
+    var containerTextBlock = item.lastElementChild;
+    // var style = node.target.parentNode.lastElementChild.style;
+    
+    console.log(containerTextBlock);
+
+
+    if (item.classList.contains('active')) {
+        containerTextBlock.style.maxHeight = 0;
+        item.classList.remove('active');
+    } else {
+        containerTextBlock.style.maxHeight = "300px";
+        item.classList.add('active');
+    }
+
+    // if (style.maxHeight == '0' || style.maxHeight == '') {
+    //     style.maxHeight = "300px";
+    // } else {
+    //     style.maxHeight = '0';
+    // }
+}
 //
-// var acco = document.querySelector('.acco');
+// acco.addEventListener('click', function (e) {
+//     // console.log(e.currentTarget);
+//     // console.log(e.target)
+//     // e.target.parentNode.lastElementChild.style.height="inherit";
 //
-//     acco.addEventListener('click', function (e) {
-//         // console.log(e.currentTarget);
-//         console.log(e.target);
-//     });
-
-
-$(document).ready(function () {
-    $('.acco__trigger').on('click', function (e) {
-        e.preventDefault();
-
-        var item = $(this).closest('.acco__item');
-        var textBlock = item.find('.acco__content-text');
-        var reqHeight = textBlock.outerHeight();
-        var containerTextBlock = item.find('.acco__content');
-
-
-        containerTextBlock.css('height', reqHeight);
-        console.log(reqHeight);
-    })
-})
+//     toggle(e);
+//     //
+//     // var item = e.target.parentNode;
+//     // item.querySelector(".acco__content")
+// });

@@ -43,7 +43,10 @@ ul li {
 }
 
 .acco__content {
-    height: 0;
+    /*display: none;*/
+    /*visibility: hidden;*/
+   max-height: 0;
+    /*height: 0;*/
     overflow: hidden;
     transition: .5s;
 }
