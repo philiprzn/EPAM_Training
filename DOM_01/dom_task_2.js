@@ -3,7 +3,7 @@ function deleteTextNodes(elem) {
              var childElem = elem.childNodes[i];
 
         if (childElem.nodeType == 3) {
-            elem.removeChild(elem.childNodes[i]);
+            elem.removeChild(childElem);
             i--;
         }
         if (childElem.nodeType == 1) {
@@ -14,5 +14,6 @@ function deleteTextNodes(elem) {
 
 // deleteTextNodes(document.body);
 deleteTextNodes(document.querySelector('#container'));
-deleteTextNodes(document.querySelector('.container'));
+// deleteTextNodes(document.querySelector('.container'));
+
 
