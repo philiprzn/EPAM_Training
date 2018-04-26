@@ -71,10 +71,7 @@ function moveBlock(field) {
         var block = e.target,
             coords = getCoords(block),
             shiftX = e.pageX - coords.left - coords.width / 4,
-            shiftY = e.pageY - coords.top + coords.height / 2;
-
-        console.log(shiftY);
-        console.log(shiftX);
+            shiftY = e.pageY - coords.top + coords.height / 4;
 
         block.style.position = 'absolute';
 
@@ -82,13 +79,13 @@ function moveBlock(field) {
 
         block.style.zIndex = -10;
 
+        document.onmousemove = function (e) {
+            moveAt(e);
+        }
+
         function moveAt(e) {
             block.style.left = e.pageX - shiftX + 'px';
             block.style.top = e.pageY - shiftY + 'px';
-        }
-
-        document.onmousemove = function (e) {
-            moveAt(e);
         }
 
         document.addEventListener('mouseup', function end() {
@@ -100,10 +97,15 @@ function moveBlock(field) {
     function getCoords(elem) {
         var box = elem.getBoundingClientRect();
         return {
-            top: box.top + pageYOffset,
-            left: box.left + pageXOffset,
+            top: box.top - pageYOffset,
+            left: box.left - pageXOffset,
             height: box.height,
             width: box.width
         };
     }
+
+    block.ondragstart = function() {
+        return false;
+    };
+
 }

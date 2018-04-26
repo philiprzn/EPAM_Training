@@ -44,21 +44,4 @@ function toggle(node) {
         containerTextBlock.style.maxHeight = "300px";
         item.classList.add('active');
     }
-
-    // if (style.maxHeight == '0' || style.maxHeight == '') {
-    //     style.maxHeight = "300px";
-    // } else {
-    //     style.maxHeight = '0';
-    // }
 }
-//
-// acco.addEventListener('click', function (e) {
-//     // console.log(e.currentTarget);
-//     // console.log(e.target)
-//     // e.target.parentNode.lastElementChild.style.height="inherit";
-//
-//     toggle(e);
-//     //
-//     // var item = e.target.parentNode;
-//     // item.querySelector(".acco__content")
-// });
