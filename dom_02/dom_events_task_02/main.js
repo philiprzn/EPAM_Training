@@ -70,8 +70,8 @@ function moveBlock(field) {
     field.addEventListener('mousedown', function (e) {
         var block = e.target,
             coords = getCoords(block),
-            shiftX = e.pageX - coords.left,
-            shiftY = e.pageY - coords.top;
+            shiftX = e.pageX - coords.left - coords.width / 4,
+            shiftY = e.pageY - coords.top + coords.height / 2;
 
         console.log(shiftY);
         console.log(shiftX);
@@ -101,7 +101,9 @@ function moveBlock(field) {
         var box = elem.getBoundingClientRect();
         return {
             top: box.top + pageYOffset,
-            left: box.left + pageXOffset
+            left: box.left + pageXOffset,
+            height: box.height,
+            width: box.width
         };
     }
 }
