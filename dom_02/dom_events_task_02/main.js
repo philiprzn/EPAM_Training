@@ -3,7 +3,6 @@ var field = document.getElementById('field');
 var countBox = 0;
 
 btn.addEventListener('click', function addBlock() {
-
     createBlock(field);
 });
 
@@ -70,8 +69,8 @@ function moveBlock(field) {
     field.addEventListener('mousedown', function (e) {
         var block = e.target,
             coords = getCoords(block),
-            shiftX = e.pageX - coords.left - coords.width / 4,
-            shiftY = e.pageY - coords.top + coords.height / 4;
+            shiftX = e.pageX - coords.left ,
+            shiftY = e.pageY - coords.top ;
 
         block.style.position = 'absolute';
 
@@ -79,13 +78,13 @@ function moveBlock(field) {
 
         block.style.zIndex = -10;
 
-        document.onmousemove = function (e) {
-            moveAt(e);
-        }
-
         function moveAt(e) {
             block.style.left = e.pageX - shiftX + 'px';
             block.style.top = e.pageY - shiftY + 'px';
+        }
+
+        document.onmousemove = function (e) {
+            moveAt(e);
         }
 
         document.addEventListener('mouseup', function end() {
@@ -98,9 +97,7 @@ function moveBlock(field) {
         var box = elem.getBoundingClientRect();
         return {
             top: box.top - pageYOffset,
-            left: box.left - pageXOffset,
-            height: box.height,
-            width: box.width
+            left: box.left - pageXOffset
         };
     }
 
