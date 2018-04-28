@@ -23,12 +23,16 @@ Social.prototype.payment = function () {
 
 
 // --------- Класс-потомок от Transport -----------
-function Private() {
+function Private(name = 'BMW', seats = 4, fuel = 'gasoline') {
     Transport.apply(this, arguments);
+    this.fuel = fuel;
+    this.seats = seats;
 }
 Private.prototype = Object.create(Transport.prototype); // Наследуем от Transport
 Private.prototype.constructor = Private; // Сохраняем конструктор
-
+Private.prototype.travel = function () {
+    console.log('You can go anywhere U want, but U need to feed me with ' + this.fuel);
+};
 
 
 // --------- Класс-потомок от Social -----------
@@ -44,3 +48,4 @@ Ecologic.prototype.gasless = function () {
 };
 
 var trolleybus = new Ecologic('Троллейбус № 3', 80);
+var car = new Private('Nissan', 6, 'diesel');
