@@ -403,5 +403,54 @@ a {
     transition: ease-in-out 0.2s;
 }
 
+/*************************** Popup *******************************/
+.popup{
+    display:none;
+    position: fixed;
+    z-index: 100;
+    left: 100px;
+    top: 130px;
+    padding: 5px 15px 15px;
+    width: 250px;
+    overflow: hidden;
+    border: 1px solid #143737;
+    background-color: #eef1f7;
+    border-radius: 15px;
+}
 
 
+.popup a.close {
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:15px;
+    right:10px;
+    color: grey;
+    font-size: 20px;
+}
+.popup a.close:hover {
+    color: #1e2535;
+    transition: ease .3s;
+}
+
+.name {
+    margin-bottom: 15px;
+}
+
+.name input {
+    margin-top: 2%;
+    margin-left: 6px;
+}
+
+.author {
+    margin-bottom: 20px;
+}
+
+#popup form input[value="Add"] {
+    padding: 5px 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid grey;
+    color: white;
+    background-color: #15a4fa;
+}

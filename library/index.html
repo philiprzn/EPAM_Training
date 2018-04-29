@@ -39,7 +39,9 @@
             <div class="aside-wrap">
                 <aside class="aside">
                     <div class="book-adder">
-                        <button class="book-adder__button"><i class="fas fa-plus"></i><span class="book-adder__button_text">Add a book</span>
+                        <button class="book-adder__button" id="bookadder" onclick="appearance()">
+                            <i class="fas fa-plus"></i>
+                            <span class="book-adder__button_text">Add a book</span>
                         </button>
                     </div>
                     <nav class="nav">
@@ -357,5 +359,27 @@
             </div>
         </footer>
     </div>
+
+
+    <!--/*************************** Popup *******************************/-->
+    <div class="popup" id="popup">
+        <a class="close" href="#" >
+            <i class="fas fa-times" onclick="disappearance()"></i>
+        </a>
+        <h2>Add a book</h2>
+        <form method="post" action="">
+            <div class="name">
+                <label for="name">Name : </label>
+                <input type="text" name="name">
+            </div>
+            <div class="author">
+                <label for="author">Author : </label>
+                <input type="text" name="author">
+            </div>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
     </body>
 </html>
