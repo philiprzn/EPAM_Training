@@ -1,0 +1,82 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /*height: 990px;*/
+    width: 100%
+}
+
+.header {
+    display: flex;
+    /*width: 100%;*/
+    flex-direction: row-reverse;
+}
+
+.user {
+    display: flex;
+}
+.support__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+}
+
+
+.aside-wrap {
+    display: flex;
+    min-width: 200px;
+}
+
+.aside{
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+}
+
+.history__item {
+
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.service-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filters__list{
+    display: flex;
+}
+.books-section{
+    overflow: auto;
+}
+.book {
+    display: flex;
+    flex-wrap: wrap;
+}
+.book__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+}

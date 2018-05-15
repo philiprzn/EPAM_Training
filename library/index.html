@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="user">
+                <!--<div class="user-wrap">-->
+                <div class="user__ava">
+                    <img src="img/lilava.png" alt="#" class="user__ava-pic">
+                </div>
+                <div class="user__name">
+                    <span>Curt Curt</span>
+                    <a href="#"><i class="fas fa-chevron-circle-down"></i></a>
+                </div>
+
+                <!--</div>-->
+            </div>
+            <div class="support">
+                <ul class="support__list">
+                    <li class="support__item"><a href="#" class="support__link">Help Center</a></li>
+                    <i class="fas fa-circle"></i>
+                    <li class="support__item"><a href="#" class="support__link">Our Support</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="aside-wrap">
+                <aside class="aside">
+                    <div class="book-adder">
+                        <button class="book-adder__button" id="bookadder" onclick="appearance()">
+                            <i class="fas fa-plus"></i>
+                            <span class="book-adder__button_text">Add a book</span>
+                        </button>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-book"></i>Now Reading</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-globe"></i>Browse</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-shopping-cart"></i>Buy Books</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-star"></i>Favorite Books</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="fas fa-th-list"></i>Wishlist</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link"><i class="far fa-clock"></i>History</a></li>
+                        </ul>
+                    </nav>
+                    <div class="categories">
+                        <ul class="categories__list">
+                            <li class="categories__item"><a href="#" class="categories__link"><i class="fas fa-circle fa-xs"></i>Must Read Titles</a></li>
+                            <li class="categories__item"><a href="#" class="categories__link"><i class="fas fa-circle fa-xs"></i>Best Of List</a></li>
+                            <li class="categories__item"><a href="#" class="categories__link"><i class="fas fa-circle fa-xs"></i>Classic Novels</a></li>
+                            <li class="categories__item"><a href="#" class="categories__link"><i class="fas fa-circle fa-xs"></i>Non Fiction</a></li>
+                        </ul>
+                    </div>
+                    <div class="history">
+                        <article class="history__item">
+                            <p class="history__text">You added
+                                <a href="#" class="history__item_film-link">The Trial</a> by
+                                <a href="#" class="history__item_author-link">Franz Kafka</a> to your
+                                <a href="#" class="history__item_mr-link">Must Read Titles</a>.
+                            </p>
+                            <span class="history__time">24 minutes ago</span>
+                            <i class="far fa-clock"></i>
+                        </article>
+
+                        <article class="history__item">
+                            <p class="history__text">You added
+                                <a href="#" class="history__item_film-link">Fight Club</a> by
+                                <a href="#" class="history__item_author-link">Chuk Palahniuk</a> to your
+                                <a href="#" class="history__item_mr-link">Must Read Titles</a>.
+                            </p>
+                            <span class="history__time">24 minutes ago</span>
+                            <i class="far fa-clock"></i>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+            <main class="main-wrap">
+                <header class="main-header">
+                    <h3 class="main-header__title">Browse Available Books</h3>
+                </header>
+                <section class="service-section">
+                    <div class="filters">
+                        <ul class="filters__list">
+                            <li class="filters__item filters__item_active"><a href="#" class="filters__link"><span
+                                    class="filter__text">All Books</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link "><span
+                                    class="filter__text">Most Recent</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">Most Popular</span></a></li>
+                            <li class="filters__item"><a href="#" class="filters__link"><span
+                                    class="filter__text">Free Books</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Enter Keywords">
+                        <a href="#" onclick="serch()"><i class="fas fa-search"></i></a>
+                    </div>
+                </section>
+                <section class="books-section">
+                    <article class="book">
+                        <ul class="book__list">
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jewels of Nizam</div>
+                                    <div class="book__desc_author">by <a href="#">Geeta Devi</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover2.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Cakes & Bakes</div>
+                                    <div class="book__desc_author">by <a href="#">Sanjeev Kapoor</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover3.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jamie's Kitchen</div>
+                                    <div class="book__desc_author">by <a href="#">Jamie Oliver</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover4.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Expensive Family Meals</div>
+                                    <div class="book__desc_author">by <a href="#">Simon Holst</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jewels of Nizam</div>
+                                    <div class="book__desc_author">by <a href="#">Geeta Devi</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover2.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Cakes & Bakes</div>
+                                    <div class="book__desc_author">by <a href="#">Sanjeev Kapoor</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover3.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jamie's Kitchen</div>
+                                    <div class="book__desc_author">by <a href="#">Jamie Oliver</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover4.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Expensive Family Meals</div>
+                                    <div class="book__desc_author">by <a href="#">Simon Holst</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover4.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Expensive Family Meals</div>
+                                    <div class="book__desc_author">by <a href="#">Simon Holst</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jewels of Nizam</div>
+                                    <div class="book__desc_author">by <a href="#">Geeta Devi</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover2.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Cakes & Bakes</div>
+                                    <div class="book__desc_author">by <a href="#">Sanjeev Kapoor</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover3.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Jamie's Kitchen</div>
+                                    <div class="book__desc_author">by <a href="#">Jamie Oliver</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                            <li class="book__item">
+                                <a href="#" class="book__link">
+                                    <div class="book__pic">
+                                        <img src="img/book-cover4.jpg" alt="#" class="book__pic_img">
+                                    </div>
+                                </a>
+                                <div class="book__desc">
+                                    <div class="book__desc_title">Expensive Family Meals</div>
+                                    <div class="book__desc_author">by <a href="#">Simon Holst</a></div>
+                                </div>
+                                <div class="book__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="settings">
+                <a href="#"><i class="fas fa-cog"></i></a>
+            </div>
+            <div class="query">
+                <a href="#"><i class="far fa-question-circle"></i></a>
+            </div>
+        </footer>
+    </div>
+
+
+    <!--/*************************** Popup *******************************/-->
+    <div class="popup" id="popup">
+        <a class="close" href="#" >
+            <i class="fas fa-times" onclick="disappearance()"></i>
+        </a>
+        <h2>Add a book</h2>
+        <form method="post" action="">
+            <div class="name">
+                <label for="book-title">Name : </label>
+                <input type="text" id="book-title" name="book-title">
+            </div>
+            <div class="author">
+                <label for="book-author">Author : </label>
+                <input type="text" id="book-author" name="book-author">
+            </div>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>
