@@ -314,11 +314,15 @@ a {
     font-size: 13pt;
 }
 
-.search > i {
+.search a > i {
     position: absolute;
     top: 8px;
     right: 13px;
     color: #8c97b2;
+}
+
+.search-button {
+    position: relative;
 }
 /*endregion*/
 

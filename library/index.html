@@ -104,7 +104,7 @@
                     </div>
                     <div class="search">
                         <input type="text" class="search__input" placeholder="Enter Keywords">
-                        <i class="fas fa-search"></i>
+                        <a href="#" onclick="serch()"><i class="fas fa-search"></i></a>
                     </div>
                 </section>
                 <section class="books-section">
@@ -369,12 +369,12 @@
         <h2>Add a book</h2>
         <form method="post" action="">
             <div class="name">
-                <label for="name">Name : </label>
-                <input type="text" name="name">
+                <label for="book-title">Name : </label>
+                <input type="text" id="book-title" name="book-title">
             </div>
             <div class="author">
-                <label for="author">Author : </label>
-                <input type="text" name="author">
+                <label for="book-author">Author : </label>
+                <input type="text" id="book-author" name="book-author">
             </div>
             <input type="submit" value="Add">
         </form>
