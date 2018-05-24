@@ -6,14 +6,55 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Book list</h1>
     <hr>
-    <button onclick="loadBooks()" id="button">Загрузить phones.json!</button>
+
+    <table id="table">
+        <th class="thead">№</th>
+        <th class="thead">Name</th>
+        <th class="thead">Author</th>
+        <th class="thead">Genre</th>
+        <th class="thead">Year</th>
+    </table>
+    <hr>
+
+    <button id="loadBooks" onclick="loadBooks()">Загрузить книги</button>
+    <button id="addBook" onclick="showPopup()">Добавить книгу</button>
+
     <ul id="list"></ul>
 
-    <script src="js/main.js"></script>
+
+    <!--/*************************** Popup *******************************/-->
+    <div class="popup" id="popup">
+        <a class="close" href="#" >
+            <i class="fas fa-times" onclick="closePopup()"></i>
+        </a>
+        <h2>Add a book</h2>
+        <form method="post" name = "book-form" onsubmit="return false;">
+            <div class="name">
+                <label for="book-title">Name : </label>
+                <input type="text" id="book-title" name="book-title">
+            </div>
+            <div class="author">
+                <label for="book-author">Author : </label>
+                <input type="text" id="book-author" name="book-author">
+            </div>
+            <div class="genre">
+                <label for="book-genre">Genre : </label>
+                <input type="text" id="book-genre" name="book-genre">
+            </div>
+            <div class="year">
+                <label for="book-year">Year : </label>
+                <input type="text" id="book-year" name="book-year">
+            </div>
+            <input type="button" value="Add" onclick="addBook()">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>

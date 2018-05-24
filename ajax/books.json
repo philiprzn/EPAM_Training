@@ -1,8 +1,1 @@
-[
-  {"name":"name 1", "author":"author 1", "genre":"genre 1", "year":"1991" },
-  {"name":"name 2", "author":"author 2", "genre":"genre 2", "year":"1992" },
-  {"name":"name 3", "author":"author 3", "genre":"genre 3", "year":"1993" },
-  {"name":"name 4", "author":"author 4", "genre":"genre 4", "year":"1994" }
-]
-
-
+[{"name":"name 1","author":"author 1","genre":"genre 1","year":"year 1"},{"name":"name 2","author":"author 2","genre":"genre 2","year":"year 2"},{"name":"name 3","author":"author 3","genre":"genre 3","year":"year 3"},{"name":"name 4","author":"author 4","genre":"genre 4","year":"year 4"},{"name":"111","author":"222","genre":"333","year":"444"},{"name":"222","author":"333","genre":"444","year":"555"},{"name":"222","author":"333","genre":"444","year":"555"}]
